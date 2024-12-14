@@ -1,7 +1,12 @@
 version: '3'
-
 services:
   simulation:
     image: mysteriouscrawler/test
     ports:
       - "3000:3000"
+  app:
+    build: .
+    ports: 
+      - "1337:1337"
+    depends_on:
+    - simulation

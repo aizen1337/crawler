@@ -12,8 +12,4 @@ export type SportEvent = {
     competition: string;
   };
   
-  export const API_URLS = {
-    STATE: "/api/state",
-    MAPPINGS: "/api/mappings",
-  };
-  
+ 
